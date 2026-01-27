@@ -16,7 +16,11 @@ const Color sixCategoryColor = Color(0XFF2EB200);
 final Color sixCategoryColorOpasity = Color(0XFF2EB200).withOpacity(.53);
 
 const Color sevenCategoryColor = Color(0XFF06FFA5);
+
+
 const Color eightCategoryColor = Color(0XFFFF1E0F);
+final Color eightCategoryColoropasity = Color(0XFFFF1E0F).withOpacity(0.53);
+
 
 const Color nightCategoryColor = Color(0xff0029FF);
 const Color tenCategoryColor = Color(0xffC00C00);

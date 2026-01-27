@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nomad_travel_app/pages/cultural_page.dart';
 import 'package:nomad_travel_app/pages/landmark_page.dart';
+import 'package:nomad_travel_app/pages/lestbookatour_page.dart';
 import 'package:nomad_travel_app/pages/natural_page.dart';
 import 'package:nomad_travel_app/pages/nightlife_page.dart';
 import 'package:nomad_travel_app/utils/color.dart';
@@ -147,10 +148,20 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 10),
-                CategoryCard(
-                  categoryName: "Book For A Ride Today!",
-                  boxColor: thirdCategoryColor,
-                  boxWith: 380,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LestbookatourPage(),
+                      ),
+                    );
+                  },
+                  child: CategoryCard(
+                    categoryName: "Book For A Ride Today!",
+                    boxColor: thirdCategoryColor,
+                    boxWith: 380,
+                  ),
                 ),
               ],
             ),
