@@ -12,9 +12,17 @@ class NightlifePage extends StatelessWidget {
           fontSize:30,
           fontWeight: FontWeight.w600,
           color:fiveCategoryColor,
-        ),),
+        ),
+        ),
         centerTitle: true,
         
+      ),
+      body:SingleChildScrollView(
+        child: Column(
+          children: [
+            Text("data")
+          ],
+        ),
       ),
     );
   }
