@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:nomad_travel_app/pages/cultural_page.dart';
+import 'package:nomad_travel_app/pages/landmark_page.dart';
+import 'package:nomad_travel_app/pages/natural_page.dart';
+import 'package:nomad_travel_app/pages/nightlife_page.dart';
 import 'package:nomad_travel_app/utils/color.dart';
 import 'package:nomad_travel_app/widgets/home_page/category_card.dart';
 
@@ -68,10 +72,85 @@ class HomePage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
+                SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NaturalPage(),
+                          ),
+                        );
+                      },
+                      child: CategoryCard(
+                        categoryName: "Natural",
+                        boxColor: firstCategoryColor,
+                        boxWith: 180,
+                      ),
+                    ),
+
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NightlifePage(),
+                          ),
+                        );
+                      },
+                      child: CategoryCard(
+                        categoryName: "Nightlife",
+                        boxColor: firstCategoryColor,
+                        boxWith: 180,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LandmarkPage(),
+                          ),
+                        );
+                      },
+                      child: CategoryCard(
+                        categoryName: "Landmarks",
+                        boxColor: secondCategoryColor,
+                        boxWith: 180,
+                      ),
+                    ),
+
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CulturalPage(),
+                          ),
+                        );
+                      },
+                      child: CategoryCard(
+                        categoryName: "Cultural",
+                        boxColor: secondCategoryColor,
+                        boxWith: 180,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10),
                 CategoryCard(
-                  categoryName: "Natural",
-                  boxColor: firstCategoryColor,
-                  boxWith: 180,
+                  categoryName: "Book For A Ride Today!",
+                  boxColor: thirdCategoryColor,
+                  boxWith: 380,
                 ),
               ],
             ),

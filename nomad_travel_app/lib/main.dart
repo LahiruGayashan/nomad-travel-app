@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nomad_travel_app/pages/home_page.dart';
+import 'package:nomad_travel_app/pages/natural_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Nomad_Travel_App ",
       home:HomePage(),
+      
     );
   }
 }
