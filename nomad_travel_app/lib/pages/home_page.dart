@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nomad_travel_app/utils/color.dart';
+import 'package:nomad_travel_app/widgets/home_page/category_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,8 +11,9 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 1),
+            padding: const EdgeInsets.all(8.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,15 +56,24 @@ class HomePage extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
 
-                 Image.asset("images/main.png"),
-
-                 SizedBox(height: 10),
-                 Row(
-                  children: [
-                    Container()
-                  ],
-                 )
-                ],
+                Image.network(
+                  "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2073&auto=format&fit=crop",
+                ),
+                SizedBox(height: 10),
+                Text(
+                  "Select a Place from the categories",
+                  style: TextStyle(
+                    color: nainColor,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                CategoryCard(
+                  categoryName: "Natural",
+                  boxColor: firstCategoryColor,
+                  boxWith: 180,
+                ),
+              ],
             ),
           ),
         ),

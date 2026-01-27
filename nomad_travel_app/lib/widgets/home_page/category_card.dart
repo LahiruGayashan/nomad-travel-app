@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+
+class CategoryCard extends StatelessWidget {
+  final String categoryName;
+  final Color boxColor;
+  final double boxWith;
+
+  const CategoryCard({
+    super.key,
+    required this.categoryName,
+    required this.boxColor,
+    required this.boxWith,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 100,
+      width: boxWith,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: boxColor,
+      ),
+      child: Center(
+        child: Text(
+          categoryName,
+          style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+        ),
+      ),
+    );
+  }
+}
