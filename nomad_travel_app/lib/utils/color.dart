@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 final Color mainTextColor = Color(0xff3B3636);
+
 const Color nainColor = Color(0XFF9E00FF);
+final Color nainColorOpasity = Color(0XFF9E00FF).withOpacity(0.52);
+
 const Color nainBlack = Colors.black;
 const Color nainWhite = Colors.white;
 
@@ -17,10 +20,8 @@ final Color sixCategoryColorOpasity = Color(0XFF2EB200).withOpacity(.53);
 
 const Color sevenCategoryColor = Color(0XFF06FFA5);
 
-
 const Color eightCategoryColor = Color(0XFFFF1E0F);
 final Color eightCategoryColoropasity = Color(0XFFFF1E0F).withOpacity(0.53);
-
 
 const Color nightCategoryColor = Color(0xff0029FF);
 const Color tenCategoryColor = Color(0xffC00C00);

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nomad_travel_app/utils/color.dart';
+import 'package:nomad_travel_app/widgets/imagecard_page.dart';
 
 
 class NightlifePage extends StatelessWidget {
@@ -33,116 +34,40 @@ class NightlifePage extends StatelessWidget {
                   color: nainBlack,
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 10),   
               Column(
                 children: [
-                  Text(
-                    "Unawatuna",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: fiveCategoryColorOpasity,
-                    ),
-                  ),
+                ImagecardPage(
+                  title: "Unawatuna",
+                   description: "Step into a world where golden sands meet a turquoise horizon. Unawatuna is more than just a beach; it's a lifestyle. Whether youre diving into coral reefs, exploring ancient hilltop pagodas, or dancing under the stars, Unawatuna captures the true spirit of a tropical nomad.",
+                    imageUrl: 'images/unawatuna.jpg',
+                     titleColor: fiveCategoryColorOpasity,
+                      imageBoderColor: fiveCategoryColor,
+                      boderRadios: 20,
+                      ),
+                 SizedBox(height: 10),
+                  
+                  ImagecardPage(
+                    title: "Coconut Tree Hill",
+                     description: "Discover a tranquil sanctuary where the reef meets the shore. Polhena Beach offers crystal-clear lagoons and the rare chance to swim alongside majestic sea turtles. It’s the ultimate destination for those seeking the peaceful side of the Indian Ocean.",
+                      imageUrl: "images/coconutTreeHill.jpg",
+                       titleColor: fiveCategoryColorOpasity,
+                      imageBoderColor: fiveCategoryColor,
+                      boderRadios: 20,
+                        ),
+                        SizedBox(height: 10),
+                  ImagecardPage(
+                    title: "Mirissa Beach",
+                     description: "Discover a tranquil sanctuary where the reef meets the shore. Polhena Beach offers crystal-clear lagoons and the rare chance to swim alongside majestic sea turtles. It’s the ultimate destination for those seeking the peaceful side of the Indian Ocean.", 
+                     imageUrl: "images/mirissabeach.jpg",
+                      titleColor: fiveCategoryColorOpasity,
+                      imageBoderColor: fiveCategoryColor,
+                      boderRadios: 20,
+                      ),
+                  SizedBox(height: 20
+              ),
                 ],
               ),
-              SizedBox(height: 10),
-              Container(
-                width: double.infinity,
-                height: 200,
-                decoration: BoxDecoration(
-                  border: Border.all(color: fiveCategoryColor, width: 4),
-                  borderRadius: BorderRadius.circular(20),
-                  image: const DecorationImage(
-                    image: NetworkImage(
-                      'https://images.unsplash.com/photo-1665765415963-28b2fa36df8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                    ),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-
-              SizedBox(height: 10),
-              Text(
-                "Step into a world where golden sands meet a turquoise horizon. Unawatuna is more than just a beach; it's a lifestyle. Whether youre diving into coral reefs, exploring ancient hilltop pagodas, or dancing under the stars, Unawatuna captures the true spirit of a tropical nomad.",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                  color: nainBlack,
-                ),
-              ),
-
-
-              SizedBox(height: 10),
-
-              Text(
-                "Coconut Tree Hill",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                  color: fiveCategoryColorOpasity,
-                ),
-              ),
-              SizedBox(height: 10),
-              Container(
-                width: double.infinity,
-                height: 200,
-                decoration: BoxDecoration(
-                  border: Border.all(color: fiveCategoryColor, width: 4),
-                  borderRadius: BorderRadius.circular(20),
-                  image: const DecorationImage(
-                    image: NetworkImage(
-                      'https://images.unsplash.com/photo-1580910527739-556eb89f9d65?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                    ),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              SizedBox(height: 10),
-              Text(
-                "Discover a tranquil sanctuary where the reef meets the shore. Polhena Beach offers crystal-clear lagoons and the rare chance to swim alongside majestic sea turtles. It’s the ultimate destination for those seeking the peaceful side of the Indian Ocean.",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                  color: nainBlack,
-                ),
-              ),
-              SizedBox(height: 10
-              ),
-              Text(
-                "Mirissa Beach",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                  color: fiveCategoryColorOpasity,
-                ),
-              ),
-
-              SizedBox(height: 10),
-              Container(
-                width: double.infinity,
-                height: 200,
-                decoration: BoxDecoration(
-                  border: Border.all(color: fiveCategoryColor, width: 4),
-                  borderRadius: BorderRadius.circular(20),
-                  image: const DecorationImage(
-                    image: NetworkImage(
-                      'https://images.unsplash.com/photo-1734279135140-05229fcde3a5?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                    ),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              SizedBox(height: 10),
-              Text(
-                "Discover a tranquil sanctuary where the reef meets the shore. Polhena Beach offers crystal-clear lagoons and the rare chance to swim alongside majestic sea turtles. It’s the ultimate destination for those seeking the peaceful side of the Indian Ocean.",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                  color: nainBlack,
-                ),
-              ),
-
             ],
           ),
         ),
