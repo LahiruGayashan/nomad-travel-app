@@ -4,6 +4,7 @@ import 'package:nomad_travel_app/pages/landmark_page.dart';
 import 'package:nomad_travel_app/pages/lestbookatour_page.dart';
 import 'package:nomad_travel_app/pages/natural_page.dart';
 import 'package:nomad_travel_app/pages/nightlife_page.dart';
+import 'package:nomad_travel_app/pages/rate_page.dart';
 import 'package:nomad_travel_app/utils/color.dart';
 import 'package:nomad_travel_app/widgets/home_page/category_card.dart';
 
@@ -90,6 +91,7 @@ class HomePage extends StatelessWidget {
                         categoryName: "Natural",
                         boxColor: firstCategoryColor,
                         boxWith: 180,
+                        boxheight:150 ,
                       ),
                     ),
 
@@ -106,6 +108,7 @@ class HomePage extends StatelessWidget {
                         categoryName: "Nightlife",
                         boxColor: firstCategoryColor,
                         boxWith: 180,
+                        boxheight:150 ,
                       ),
                     ),
                   ],
@@ -127,6 +130,7 @@ class HomePage extends StatelessWidget {
                         categoryName: "Landmarks",
                         boxColor: secondCategoryColor,
                         boxWith: 180,
+                        boxheight:150 ,
                       ),
                     ),
 
@@ -143,6 +147,7 @@ class HomePage extends StatelessWidget {
                         categoryName: "Cultural",
                         boxColor: secondCategoryColor,
                         boxWith: 180,
+                        boxheight:150 ,
                       ),
                     ),
                   ],
@@ -161,6 +166,25 @@ class HomePage extends StatelessWidget {
                     categoryName: "Book For A Ride Today!",
                     boxColor: thirdCategoryColor,
                     boxWith: 380,
+                    boxheight:150 ,
+                  ),
+                ),
+
+                SizedBox(height: 10),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RatePage(),
+                      ),
+                    );
+                  },
+                  child: CategoryCard(
+                    categoryName: "Places & Feedback !",
+                    boxColor: const Color.fromARGB(255, 204, 81, 81),
+                    boxWith: 380,
+                    boxheight:100 ,
                   ),
                 ),
               ],

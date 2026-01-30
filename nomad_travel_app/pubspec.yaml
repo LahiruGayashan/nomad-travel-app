@@ -68,6 +68,9 @@ flutter:
      - images/unawatuna.jpg
      - images/coconutTreeHill.jpg
      - images/mirissabeach.jpg
+     - images/sinharaja.jpg
+     - images/yala.jpg
+     - images/horten.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

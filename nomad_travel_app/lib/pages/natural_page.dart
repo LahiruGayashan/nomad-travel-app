@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nomad_travel_app/utils/color.dart';
+import 'package:nomad_travel_app/widgets/imagecard_page.dart';
 
 class NaturalPage extends StatelessWidget {
   const NaturalPage({super.key});
@@ -21,60 +22,41 @@ class NaturalPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Experience the raw beauty of the world's most breathtaking landscapes, from misty peaks to hidden valleys.",style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w500,
-                color:nainBlack,
-              ),
-              ),
-              SizedBox(height: 10),
-              Text("Nature Wonders Place-1",style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
-                color: sixCategoryColorOpasity,
-              ),
-              ),
-              Image.network("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"),
+               ImagecardPage(
+                title: "Sinharaja Forest",
+                description: "Immerse yourself in a prehistoric world. A UNESCO World Heritage site, Sinharaja is a biodiversity hotspot where 60% of the trees are endemic. Trek through misty trails to discover rare birds, giant ferns, and hidden waterfalls.",
+                 imageUrl: "images/sinharaja.jpg",
+                  titleColor: sixCategoryColorOpasity,
+                   imageBoderColor: sixCategoryColor,
+                    boderRadios: 0,
+                    ),
 
-              SizedBox(height: 10),
-              Text("Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-                color: nainBlack,
-              ),),
-              SizedBox(height: 10),
-              Text("Nature Wonders Place-2",style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
-                color: sixCategoryColorOpasity,
-              ),
-              ),
-              Image.network("https://images.unsplash.com/photo-1501785888041-af3ef285b470"),
+                    SizedBox(
+                      height: 10
+                    ),
+                    ImagecardPage(
+                      title: "Yala National Park",
+                       description: "Witness the wild majesty of Sri Lanka. Yala is renowned for having the highest density of leopards on the planet. Explore dry-zone scrublands and lagoons where elephants, sloth bears, and crocodiles roam freely.",
+                        imageUrl: "images/yala.jpg",
+                         titleColor: sixCategoryColorOpasity,
+                          imageBoderColor: sixCategoryColor,
+                           boderRadios: 0,
+                           ),
+                           SizedBox(
+                      height: 10
+                    ),
 
-              SizedBox(height: 10),
-              Text("Discover captivating destinations around the globe with your ultimate travel guide. Seek tranquility in scenic landscapes or excitement in vibrant cities—our collection offers something for everyone. Unlock unforgettable experiences today.",style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-                color: nainBlack,
-              ),
-              ),
-              SizedBox(height: 10),
-              Text("Nature Wonders Place-3",style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
-                color: sixCategoryColorOpasity,
-              ),
-              ),
-              Image.network("https://images.unsplash.com/photo-1470770841072-f978cf4d019e"),
-
-              SizedBox(height: 10),
-              Text("Stop dreaming and start wandering. Nomad is your personal gateway to the world’s most breathtaking secrets. Whether you’re chasing the silent peace of a misty mountain or the electric pulse of a city that never sleeps, we’ve hand-picked every destination just for you. Your next great story starts here.",style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-                color: nainBlack,
-              ),
-              ),
-              SizedBox(height: 10),
+                    ImagecardPage(
+                      title: "Horton Plains",
+                       description: "Stand at the edge of the world. Located in the central highlands, this plateau features montane grasslands and the famous 'World’s End' cliff with a sheer 880-meter drop. Experience the silence and mist of Sri Lanka's highest plains.",
+                        imageUrl: "images/horten.jpg",
+                         titleColor: sixCategoryColorOpasity,
+                          imageBoderColor: sixCategoryColor,
+                           boderRadios: 0,
+                           ),
+                           SizedBox(
+                      height: 20
+                    ),
             ],
           ),
         ),
