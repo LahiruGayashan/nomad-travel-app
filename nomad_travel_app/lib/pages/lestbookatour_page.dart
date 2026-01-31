@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nomad_travel_app/pages/bookingforms.dart';
+import 'package:nomad_travel_app/pages/teamsize.dart';
 import 'package:nomad_travel_app/utils/color.dart';
 import 'package:nomad_travel_app/widgets/picture_words.dart';
 import 'package:nomad_travel_app/widgets/selectvehical_page.dart';
@@ -64,18 +65,22 @@ class LestbookatourPage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                 children: [
-                  SelectvehicalPage( 
-                    title: "Tuk",
-                    vehical: "images/tuk.jpg",
-                  ),
-                  SelectvehicalPage(
-                     title: "Bike",
-                    vehical: "images/bike.jpg",
-                  ),
-                 ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                   children: [
+                    SelectvehicalPage( 
+                      title: "Tuk",
+                      vehical: "images/tuk.jpg",
+                    ),
+                    SelectvehicalPage(
+                       title: "Bike",
+                      vehical: "images/bike.jpg",
+                    ),
+                   ],
+                ),
               ),
               SizedBox(
                 height: 10,
@@ -115,8 +120,44 @@ class LestbookatourPage extends StatelessWidget {
                 hintName: "Australia...",
                 userName: "Country",
               ),
-
+              SizedBox(
+              height: 10,
+              ),
+              Teamsize(),
+              SizedBox(
+                height: 10,
+              ),
+              Divider(color: nainBlackOpasity1,thickness: 4,height: 20,),
+              Text("By clicking submit, you agree to our terms of service and tour guidelines. Please ensure all details are correct.",style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: nainBlackOpasity1,
+                ),
+                ),
+                SizedBox(
+                  width: double.infinity,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Container(
+                        height: 60,
+                        width: 150,
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                        color: thirdCategoryColor,
+                        ),
+                        child: Center(
+                          child: Text("Submit",style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.w700,
+                          ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                )
             ],
+
           ),
         ),
       ),

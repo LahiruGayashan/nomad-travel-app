@@ -31,11 +31,13 @@ class Bookingforms extends StatelessWidget {
               labelText: hintName,
               hoverColor: nainBlack,
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-                
+                borderRadius: BorderRadius.circular(10), 
               ),
             ),
           ),
+          SizedBox(
+            width: 10
+            ),
         ],
       ),
     );
