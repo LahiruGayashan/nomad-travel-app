@@ -6,6 +6,8 @@ const Color nainColor = Color(0XFF9E00FF);
 final Color nainColorOpasity = Color(0XFF9E00FF).withOpacity(0.52);
 
 const Color nainBlack = Colors.black;
+final Color nainBlackOpasity1 = Colors.black.withOpacity(0.6);
+
 const Color nainWhite = Colors.white;
 
 const Color firstCategoryColor = Color(0XFF8E8FFA);

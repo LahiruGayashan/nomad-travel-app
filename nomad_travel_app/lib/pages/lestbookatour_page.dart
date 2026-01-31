@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nomad_travel_app/pages/bookingforms.dart';
 import 'package:nomad_travel_app/utils/color.dart';
+import 'package:nomad_travel_app/widgets/picture_words.dart';
 import 'package:nomad_travel_app/widgets/selectvehical_page.dart';
 
 class LestbookatourPage extends StatelessWidget {
@@ -50,13 +52,11 @@ class LestbookatourPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   SelectvehicalPage(
-                    height: 150,
-                    width: 170,
+                    title: "Car",
                     vehical: "images/car.png",
                   ),
                   SelectvehicalPage(
-                   height: 150,
-                    width: 170,
+                   title: "Van",
                     vehical: "images/van.jpg",
                   ),
                 ],
@@ -67,23 +67,55 @@ class LestbookatourPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                  children: [
-                  SelectvehicalPage(
-                    height: 150,
-                    width: 170,
+                  SelectvehicalPage( 
+                    title: "Tuk",
                     vehical: "images/tuk.jpg",
                   ),
                   SelectvehicalPage(
-                    height: 150,
-                    width: 170,
+                     title: "Bike",
                     vehical: "images/bike.jpg",
                   ),
                  ],
               ),
+              SizedBox(
+                height: 10,
+              ),
+
+               Text("Selected Place",
+                    style: TextStyle(
+                      color: nainColor,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    ),
+                    PictureWords(),
+                    SizedBox(
+                height: 20,
+              ),
+               
+                Text("Fill The Details",
+                    style: TextStyle(
+                      color: nainColor,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    ),
 
               SizedBox(
                 height: 10,
               ),
-              
+              Bookingforms(
+                hintName: "John...",
+                userName: "User Name",
+              ),
+              SizedBox(
+                height: 10,
+              ),
+               Bookingforms(
+                hintName: "Australia...",
+                userName: "Country",
+              ),
+
             ],
           ),
         ),

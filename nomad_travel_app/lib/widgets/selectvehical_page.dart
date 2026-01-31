@@ -3,25 +3,33 @@ import 'package:nomad_travel_app/utils/color.dart';
 
 class SelectvehicalPage extends StatelessWidget {
   final String vehical;
-  final double height;
-  final double width;
+  final String title;
 
   const SelectvehicalPage({
-    super.key, 
-  required this.vehical,
-   required this.height,
-    required this.width});
-
-
+    super.key,
+   required this.vehical, 
+  required this.title});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height,
-      width:width,
-      decoration: BoxDecoration(
-        border: Border.all(color: nainColor, width: 1),
-        image: DecorationImage(image: AssetImage(vehical), fit: BoxFit.cover),
+    return Card(
+      child: Column(
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadiusGeometry.circular(10),
+            child: Image.asset(vehical,
+            width: 170,
+            height: 150,
+            fit: BoxFit.cover,
+            ),
+          ),
+          Text(title,style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w500,
+            color: nainColor,
+          ),
+          ),
+        ],
       ),
     );
   }
